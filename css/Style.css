@@ -1,14 +1,13 @@
 body{
-    /*background: url(../img/backgroundBody.jpg) no-repeat;*/
-      background: url(../img/backgroundBody.jpg) no-repeat;
-      background-attachment:fixed; 
+  background: url(../img/backgroundBody.jpg) no-repeat;
+  background-attachment:fixed; 
 }
 header{
-background-color: transparent;
-height: 10rem;
-margin-top: 1rem;
-width: 100%;
-text-align: center;
+  background-color: transparent;
+  height: 10rem;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 @font-face{
@@ -27,31 +26,31 @@ text-align: center;
 }
 
 #logoSpotify {
-width: 20rem;
-height: 10rem;
-background-color: transparent;
-margin-top: 0rem;
-display: inline-block;
+  width: 20rem;
+  height: 10rem;
+  background-color: transparent;
+  margin-top: 0rem;
+  display: inline-block;
 
 }
 #imgSpotify{
-width: 20rem;
-height: 10rem;
+  width: 20rem;
+  height: 10rem;
 }
 
 #navSearch {
-background-color: transparent;
-margin-top: 1rem;
+  background-color: transparent;
+  margin-top: 1rem;
 }
 
 .fontConfig{
-font-family: SansIns;
-color: #FFF;
-font-size: 2rem;
-margin-top: 0rem;
-background: transparent;
-display: block;
-text-align: center;
+  font-family: SansIns;
+  color: #FFF;
+  font-size: 2rem;
+  margin-top: 0rem;
+  background: transparent;
+  display: block;
+  text-align: center;
 }
 
 
@@ -62,21 +61,19 @@ input[type=search] {
   font-size: 100% ;
 }
 input:focus{
-    outline:0px ;
-    -webkit-appearance:normal ;
+  outline:0px ;
+  -webkit-appearance:normal ;
 }
 
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-  
+
 }
 
 #navs-search {
-margin-left: -3.625rem;
-/*position: relative;*/
-display: inline-block;
-margin-top: -3.4375rem;
-/*position: absolute;*/
+  margin-left: -3.625rem;
+  display: inline-block;
+  margin-top: -3.4375rem;
 }
 .search{
   background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
@@ -85,11 +82,9 @@ margin-top: -3.4375rem;
   width: 47rem;
   height: 2.563rem;
   padding-left: 2rem ;
-  /*margin-top: 2rem ;
-  margin-left: 20rem;*/
   background-color:#FFF ;
   cursor: pointer ;
-  
+
   -webkit-border-radius: 15rem ;
   -moz-border-radius: 15rem ;
   border-radius: 15rem ;
@@ -98,9 +93,9 @@ margin-top: -3.4375rem;
   transition: all .5s ;
 
 }
-  
+
 .search:focus{
-   width: 47rem;
+  width: 47rem;
   padding-rigth: 2rem ;
   color: #000 ;
   background-color: #FFF ;
@@ -111,4 +106,47 @@ margin-top: -3.4375rem;
   box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 
+
+#artistId>h1,#albumId>h1{
+  color: #FFF;
+
+}
+#sectionViewHome{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  margin-left: -370px;
+  display: inline-block;
+}
+#artistId{
+  width: 25rem; 
+  float: left;
+  display: inline;
+  margin-top: 6rem;  
+  color: #FFF;
+}
+
+#albumId{
+  width: 25rem; 
+  float: left;
+  display: inline;
+  margin-top: 6rem;
+  color: #FFF;
+}
+
+.imgSearch{
+  width: 3rem;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: blue;
+}
 
