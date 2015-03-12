@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
     });
 });
 app.controller('searchCtrl', function($scope, $http) {
-    $(".search").keyup(function() {
+    $(".search").focus().keyup(function() {
         var band = $scope.search;
         $http.get('https://api.spotify.com/v1/search?type=artist&q=' + band)
         .success(function(data) {
