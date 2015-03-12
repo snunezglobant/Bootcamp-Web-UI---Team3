@@ -11,7 +11,7 @@
 
     <section id="navSearch">
       <div class="col-xs-1 " id="navs-search">
-        <input type="search" class="search"/>
+        <input type="search" class="search">
       </div>
     </section>
   </header>
@@ -22,7 +22,7 @@
       <div ng-repeat="artist in artists">
         <a href="#/artist/{{artist.id}}">
           <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
-          <img ng-show="artist.images.length<=0" src="img/perfilartist.jpg" class="imgSearch">
+          <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" class="imgSearch">
           {{artist.name}}</a>
         </div>
       </div>
@@ -31,7 +31,7 @@
         <div ng-repeat="album in albums">
           <a href="#/album/{{album.id}}">
             <img ng-show="album.images.length>0" ng-src="{{album.images[2].url}}" alt="{{album.name}}" class="imgSearch">
-            <img ng-show="album.images.length<=0" src="img/perfilalbums.jpg" class="imgSearch">
+            <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" class="imgSearch">
             {{album.name}}</a>
           </div>
         </div>
