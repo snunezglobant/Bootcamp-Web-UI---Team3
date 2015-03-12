@@ -4,16 +4,35 @@
     <section id="logoSpotify">
       <img id="imgSpotify" src="img/spotifylogo.png">
     </section>
- 
-  <section class="fontConfig">
-    <label>SEARCH FOR ALBUM OR ARTIST</label>
-  </section>
 
-  <section id="navSearch">
-    <div class="col-xs-1 " id="navs-search">
-    <input type="search" class="search"/>
-  </div>
-</section>
- </header>
+    <section class="fontConfig">
+      <label>SEARCH FOR ALBUM OR ARTIST</label>
+    </section>
 
-</section>
+    <section id="navSearch">
+      <div class="col-xs-1 " id="navs-search">
+        <input type="search" class="search"/>
+      </div>
+    </section>
+  </header>
+
+  <div ng-show="artists.length>0" id="artistId">
+    <h1>Artist:</h1>
+    <div ng-repeat="artist in artists">
+      <a href="#/artist/{{artist.id}}">
+        <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
+        <img ng-show="artist.images.length<=0" src="img/perfilartist.jpg" class="imgSearch">
+        {{artist.name}}</a>
+      </div>
+    </div>
+    <div ng-show="albums.length>0" id="albumId">
+      <h1>Albums:</h1>
+      <div ng-repeat="album in albums">
+        <a href="#/album/{{album.id}}">
+          <img ng-show="album.images.length>0" ng-src="{{album.images[2].url}}" alt="{{album.name}}" class="imgSearch">
+          <img ng-show="album.images.length<=0" src="img/perfilalbums.jpg" class="imgSearch">
+          {{album.name}}</a>
+        </div>
+      </div>
+
+    </section>
