@@ -1,0 +1,114 @@
+body{
+    /*background: url(../img/backgroundBody.jpg) no-repeat;*/
+      background: url(../img/backgroundBody.jpg) no-repeat;
+      background-attachment:fixed; 
+}
+header{
+background-color: transparent;
+height: 10rem;
+margin-top: 1rem;
+width: 100%;
+text-align: center;
+}
+
+@font-face{
+  font-family:SansIns;
+  src:url(../font//Sans%20Inserat.ttf);
+}
+
+#container{
+  width: 100%;
+  height: auto; 
+}
+
+#newAlbums{
+  width: 80rem;
+  margin-top: 20rem;
+}
+
+#logoSpotify {
+width: 20rem;
+height: 10rem;
+background-color: transparent;
+margin-top: 0rem;
+display: inline-block;
+
+}
+#imgSpotify{
+width: 20rem;
+height: 10rem;
+}
+
+#navSearch {
+background-color: transparent;
+margin-top: 1rem;
+}
+
+.fontConfig{
+font-family: SansIns;
+color: #FFF;
+font-size: 2rem;
+margin-top: 0rem;
+background: transparent;
+display: block;
+text-align: center;
+}
+
+
+input[type=search] {
+  -webkit-appearance: textfield ;
+  -webkit-box-sizing: content-box ;
+  font-family: inherit ;
+  font-size: 100% ;
+}
+input:focus{
+    outline:0px ;
+    -webkit-appearance:normal ;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  
+}
+
+#navs-search {
+margin-left: -3.625rem;
+/*position: relative;*/
+display: inline-block;
+margin-top: -3.4375rem;
+/*position: absolute;*/
+}
+.search{
+  background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
+  border:inherit;
+  margin-left: 3rem;
+  width: 47rem;
+  height: 2.563rem;
+  padding-left: 2rem ;
+  /*margin-top: 2rem ;
+  margin-left: 20rem;*/
+  background-color:#FFF ;
+  cursor: pointer ;
+  
+  -webkit-border-radius: 15rem ;
+  -moz-border-radius: 15rem ;
+  border-radius: 15rem ;
+  -webkit-transition: all .5s ;
+  -moz-transition: all .5s ;
+  transition: all .5s ;
+
+}
+  
+.search:focus{
+   width: 47rem;
+  padding-rigth: 2rem ;
+  color: #000 ;
+  background-color: #FFF ;
+  border-color: #0000FF ;
+  cursor: auto ;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
+}
+
+
