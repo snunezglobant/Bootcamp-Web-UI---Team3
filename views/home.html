@@ -10,29 +10,28 @@
     </section>
 
     <section id="navSearch">
-      <div class="col-xs-1 " id="navs-search">
-        <input type="search" class="search" ng-model="search">
-      </div>
+      <input type="search" class="search" ng-model="search">
     </section>
   </header>
 
   <div id="sectionViewHome">
+
     <div ng-show="artists.length>0" id="artistId">
-      <h1>Artist:</h1>
+      <h1>ARTISTS</h1>
       <div ng-repeat="artist in artists">
         <a href="#/artist/{{artist.id}}">
           <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
           <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" class="imgSearch">
-          {{artist.name}}</a>
+          <div class="aname">{{artist.name}}</div></a>
         </div>
       </div>
       <div ng-show="albums.length>0" id="albumId">
-        <h1>Albums:</h1>
+        <h1>ALBUMS</h1>
         <div ng-repeat="album in albums">
           <a href="#/album/{{album.id}}">
-            <img ng-show="album.images.length>0" ng-src="{{album.images[2].url}}" alt="{{album.name}}" class="imgSearch">
+            <img ng-show="album.images.length>0" ng-src="{{album.images[1].url}}" alt="{{album.name}}" class="imgSearch">
             <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" class="imgSearch">
-            {{album.name}}</a>
+            <div class="aname">{{album.name}}</div></a>
           </div>
         </div>
       </div>
