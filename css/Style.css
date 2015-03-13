@@ -128,7 +128,7 @@ transition: all .5s ;*/
   display: inline;
   margin-top: 6rem;  
   color: #FFF;
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
 
 #albumId{
@@ -137,7 +137,7 @@ transition: all .5s ;*/
   display: inline;
   margin-top: 6rem;
   color: #FFF;
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 
 .imgSearch{
