@@ -1,0 +1,301 @@
+body{
+
+  background: url(../img/backgroundBody.jpg) no-repeat;
+  background-attachment:fixed; 
+}
+header{
+  background-color: transparent;
+  height: 10rem;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+@font-face{
+  font-family:SansIns;
+  src:url(../font//Sans%20Inserat.ttf);
+}
+
+#container{
+  width: 100%;
+  height: auto; 
+}
+
+#newAlbums{
+  width: 80rem;
+  margin-top: 20rem;
+}
+
+#logoSpotify {
+  width: 20rem;
+  height: 10rem;
+  background-color: transparent;
+  margin-top: 0rem;
+  display: inline-block;
+
+}
+#imgSpotify{
+  width: 20rem;
+  height: 10rem;
+}
+
+#navSearch {
+  background-color: transparent;
+  margin-top: 1rem;
+}
+
+.fontConfig{
+  font-family: SansIns;
+  color: #FFF;
+  font-size: 2rem;
+  margin-top: 0rem;
+  background: transparent;
+  display: block;
+  text-align: center;
+}
+
+
+input[type=search] {
+  -webkit-appearance: textfield ;
+  -webkit-box-sizing: content-box ;
+  font-family: inherit ;
+  font-size: 100% ;
+}
+input:focus{
+  outline:0px ;
+  -webkit-appearance:normal ;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+
+}
+
+#navs-search {
+  margin-left: -3.625rem;
+  display: inline-block;
+  margin-top: -3.4375rem;
+}
+.search{
+  background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
+  border:inherit;
+  width: 47rem;
+  height: 2.563rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color:#FFF ;
+  cursor: pointer ;
+
+  -webkit-border-radius: 15rem ;
+  -moz-border-radius: 15rem ;
+  border-radius: 15rem ;
+/*-webkit-transition: all .5s ;
+-moz-transition: all .5s ;
+transition: all .5s ;*/
+
+}
+
+.search:focus{
+  width: 47rem;
+  padding-rigth: 2rem ;
+  color: #000 ;
+  background-color: #FFF ;
+  border-color: #0000FF ;
+  cursor: auto ;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
+}
+
+
+#artistId>h1,#albumId>h1{
+  color: #FFF;
+
+}
+#sectionViewHome{
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+#artistId{
+  width: 40%; 
+  float: left;
+  display: inline;
+  margin-top: 6rem;  
+  color: #FFF;
+  margin-left: 4rem;
+}
+
+#albumId{
+  width: 40%; 
+  float: right;
+  display: inline;
+  margin-top: 6rem;
+  color: #FFF;
+  margin-right: 4rem;
+}
+
+.imgSearch{
+  width: 12rem;
+  height: 12rem;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: blue;
+}
+.aname{
+  height: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width:480px) and (max-width:768px){
+
+  #logoSpotify{
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  #imgSpotify{
+    width: 10rem;
+    height: 5rem;
+    margin:0 auto 0 auto;
+  }
+  .fontConfig{
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+  }
+  #navSearch{
+    width: 100%;
+    display: block;
+  }
+  .search{
+    width: 80%;
+    height: 2rem;
+  }
+  #artistId{
+    width: 100%;
+    display: block;
+  }
+  #albumId{
+    width: 100%;
+    display: block;
+  }
+  .search:focus{
+    width: 80%;
+    height: 2rem;
+  }
+  #sectionViewHome {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    top: 50%;
+    height: auto;
+    text-align: center;
+  }
+  #artistId{
+    width: 40%; 
+    float: left;
+    display: inline;
+    margin-top: 0rem;  
+    color: #FFF;
+    margin-left: 10%;
+  }
+  #albumId{
+    width: 40%; 
+    float: right;
+    display: inline;
+    margin-top: 0rem;
+    color: #FFF;
+    margin-right: 10%;
+  }
+  .imgSearch{
+    width: 8rem;
+    height: 8rem;
+  }
+  .aname{
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:480px){
+  #logoSpotify{
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  #imgSpotify{
+    width: 10rem;
+    height: 5rem;
+    margin:0 auto 0 auto;
+  }
+  .fontConfig{
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+  }
+  #navSearch{
+    width: 100%;
+    display: block;
+  }
+  .search{
+    width: 80%;
+    height: 2rem;
+  }
+  #sectionViewHome {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    top: 50%;
+    height: auto;
+    margin-left: 0%;
+    text-align: center;
+  }
+  #artistId{
+    width: 100%; 
+    float: none;
+    display: inline;
+    margin-top: 0rem;  
+    color: #FFF;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  #albumId{
+    width: 100%; 
+    float: none;
+    display: inline;
+    margin-top: 0rem;
+    color: #FFF;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .imgSearch{
+    width: 10rem;
+    height: 10rem;
+  }
+  .aname{
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+}
