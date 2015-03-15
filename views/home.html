@@ -1,37 +1,38 @@
 <section id="container">
-
-  <header>
+  <div class="headerHome">
     <section id="logoSpotify">
       <img id="imgSpotify" src="img/spotifylogo.png">
     </section>
-
     <section class="fontConfig">
       <label>SEARCH FOR ALBUM OR ARTIST</label>
     </section>
-
     <section id="navSearch">
       <input type="search" class="search" ng-model="search">
     </section>
-  </header>
-
-  <div id="sectionViewHome">
-
-    <div ng-show="artists.length>0" id="artistId">
-      <h1>ARTISTS</h1>
-      <div ng-repeat="artist in artists">
-        <a href="#/artist/{{artist.id}}">
-          <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
-          <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" class="imgSearch">
-          <div class="aname">{{artist.name}}</div></a>
+  </div>
+  <div id="sectionViewHome"ng-hide="search.length<=0 || search==NULL || artists.length==0 && albums.length==0">
+    <div id="titlesAA">
+      <h1 id="labelArtists" ng-hide="artists.length==0">ARTISTS</h1>
+      <h1 id="labelAlbums" ng-hide="albums.length==0">ALBUMS</h1>
+    </div>
+    <div id="listAA" >
+      <div ng-show="artists.length>0" id="artistId">
+        <h1 id="labelArtists2">ARTISTS</h1>
+        <div ng-repeat="artist in artists">
+          <a href="#/artist/{{artist.id}}">
+            <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
+            <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" class="imgSearch">
+            <div class="aname">{{artist.name}}</div></a>
+          </div>
         </div>
-      </div>
-      <div ng-show="albums.length>0" id="albumId">
-        <h1>ALBUMS</h1>
-        <div ng-repeat="album in albums">
-          <a href="#/album/{{album.id}}">
-            <img ng-show="album.images.length>0" ng-src="{{album.images[1].url}}" alt="{{album.name}}" class="imgSearch">
-            <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" class="imgSearch">
-            <div class="aname">{{album.name}}</div></a>
+        <div ng-show="albums.length>0" id="albumId">
+          <h1 id="labelAlbums2">ALBUMS</h1>
+          <div ng-repeat="album in albums">
+            <a href="#/album/{{album.id}}">
+              <img ng-show="album.images.length>0" ng-src="{{album.images[1].url}}" alt="{{album.name}}" class="imgSearch">
+              <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" class="imgSearch">
+              <div class="aname">{{album.name}}</div></a>
+            </div>
           </div>
         </div>
       </div>
