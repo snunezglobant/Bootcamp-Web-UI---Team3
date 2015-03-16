@@ -1,21 +1,21 @@
 body{
-  overflow-x:hidden;
-  background: url(../img/backgroundBody.jpg) no-repeat;
-  background-attachment:fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+overflow-x:hidden;
+background: url(../img/backgroundBody.jpg) no-repeat;
+background-attachment:fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 header{
-  background-color: transparent;
-  margin-top: 1rem;
-  width: 100%;
-  text-align: center;
+background-color: transparent;
+margin-top: 1rem;
+width: 100%;
+text-align: center;
 }
 @font-face{
-  font-family:SansIns;
-  src:url(../font//Sans%20Inserat.ttf);
+font-family:SansIns;
+src:url(../font//Sans%20Inserat.ttf);
 }
 /*****************************BANNER***********************************
 .hHome{
@@ -67,169 +67,169 @@ transition: all .5s ;
 /*}
 /****************************************END BANNER***********************************/
 #container{
-  width: 100%;
-  height: 100%; 
-  position: absolute;
+width: 100%;
+height: 100%; 
+position: absolute;
 }
 .headerHome{
-  display: block;
-  position: relative;
-  height: auto;
-  vertical-align: top;
-  width: 100%;
-  text-align: center;
-  margin-top: 0rem;
+display: block;
+position: relative;
+height: auto;
+vertical-align: top;
+width: 100%;
+text-align: center;
+margin-top: 0rem;
 }
 #logoSpotify {
-  width: 100%;
-  height: 10rem;
-  background-color: transparent;
-  margin-top: 0rem;
-  display: inline-block;
+width: 100%;
+height: 10rem;
+background-color: transparent;
+margin-top: 0rem;
+display: inline-block;
 }
 #imgSpotify{
-  width: 20rem;
-  height: 10rem;
+width: 20rem;
+height: 10rem;
 }
 .fontConfig{
-  font-family: SansIns;
-  color: #FFF;
-  font-size: 2rem;
-  margin-top: 0rem;
-  background: transparent;
-  display: block;
-  text-align: center;
+font-family: SansIns;
+color: #FFF;
+font-size: 2rem;
+margin-top: 0rem;
+background: transparent;
+display: block;
+text-align: center;
 }
 #navSearch {
-  background-color: transparent;
-  margin-top: 1rem;
+background-color: transparent;
+margin-top: 1rem;
 }
 input[type=search] {
-  -webkit-appearance: textfield ;
-  -webkit-box-sizing: content-box ;
-  font-family: inherit ;
-  font-size: 100% ;
+-webkit-appearance: textfield ;
+-webkit-box-sizing: content-box ;
+font-family: inherit ;
+font-size: 100% ;
 }
 input:focus{
-  outline:0px ;
-  -webkit-appearance:normal ;
+outline:0px ;
+-webkit-appearance:normal ;
 }
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
 }
 .search{
-  background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
-  border:inherit;
-  width: 47rem;
-  height: 2.563rem;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  background-color:#FFF ;
-  cursor: pointer ;
-  -webkit-border-radius: 15rem ;
-  -moz-border-radius: 15rem ;
-  border-radius: 15rem ;
+background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
+border:inherit;
+width: 47rem;
+height: 2.563rem;
+padding-left: 2rem;
+padding-right: 1rem;
+background-color:#FFF ;
+cursor: pointer ;
+-webkit-border-radius: 15rem ;
+-moz-border-radius: 15rem ;
+border-radius: 15rem ;
 /*-webkit-transition: all .5s ;
 -moz-transition: all .5s ;
 transition: all .5s ;*/
 }
 .search:focus{
-  padding-right: 2rem ;
-  color: #000 ;
-  background-color: #FFF ;
-  border-color: #0000FF ;
-  cursor: auto ;
-  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
-  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
-  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
+padding-right: 2rem ;
+color: #000 ;
+background-color: #FFF ;
+border-color: #0000FF ;
+cursor: auto ;
+-webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+-moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 #sectionViewHome{
-  display: block;
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
+display: block;
+position: relative;
+width: 100%;
+height: auto;
+text-align: center;
 }
 #titlesAA{
-  width: 80%;
-  display: inline-block;
-  position: relative;
+width: 80%;
+display: inline-block;
+position: relative;
 }
 #labelArtists{
-  display: inline;
-  width: 40%;
-  float: left;
-  color: #FFF;
+display: inline;
+width: 40%;
+float: left;
+color: #FFF;
 }
 #labelAlbums{
-  display: inline;
-  width: 40%;
-  float: right;
-  color:#FFF;
-  margin-right: 12px;
+display: inline;
+width: 40%;
+float: right;
+color:#FFF;
+margin-right: 12px;
 }
 #listAA{
-  width: 80%;
-  height: 25rem;
-  position: relative;
-  display:inline-block;
-  overflow-y:scroll;
+width: 80%;
+height: 25rem;
+position: relative;
+display:inline-block;
+overflow-y:scroll;
 }
 #listAA::-webkit-scrollbar-track
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px;
-  background-color: #FFF;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #FFF;
 }
 #listAA::-webkit-scrollbar
 {
-  width: 12px;
-  border-radius: 10px;
-  background-color: #F5F5F5;
+width: 12px;
+border-radius: 10px;
+background-color: #F5F5F5;
 }
 #listAA::-webkit-scrollbar-thumb
 {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #BCBCBC;
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #BCBCBC;
 }
 #artistId{
-  width: 40%; 
-  float: left;
-  display: inline;
-  color: #FFF;
+width: 40%; 
+float: left;
+display: inline;
+color: #FFF;
 }
 #albumId{
-  width: 40%; 
-  float: right;
-  display: inline;
-  color: #FFF;
+width: 40%; 
+float: right;
+display: inline;
+color: #FFF;
 }
 .imgSearch{
-  width: 10rem;
-  height: 10rem;
-  text-align: center;
+width: 10rem;
+height: 10rem;
+text-align: center;
 }
 h1{
-  text-align: center;
+text-align: center;
 }
 a{
-  text-decoration: none;
-  color: #fff;
+text-decoration: none;
+color: #fff;
 }
 a:hover{
-  color: blue;
+color: blue;
 }
 .aname{
-  height: 5rem;
-  font-size: 1.5rem;
-  text-align: center;
+height: 5rem;
+font-size: 1.5rem;
+text-align: center;
 }
 #labelArtists2{
-  display: none;
+display: none;
 }
 #labelAlbums2{
-  display: none;
+display: none;
 }
 /*-----------------------us2-us3--------------------------------*/
 #allartist{
@@ -390,349 +390,553 @@ margin-left: 0;
 margin-bottom: 1rem;
 }
 /*-------------endus2-us3---------------------------------------*/
-@media screen and (min-width:480px) and (max-width:768px){
-  #logoSpotify{
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  #imgSpotify{
-    width: 10rem;
-    height: 5rem;
-    margin:0 auto 0 auto;
-  }
-  .fontConfig{
-    width: 100%;
-    display: block;
-    font-size: 1rem;
-  }
-  #navSearch{
-    width: 100%;
-    display: block;
-  }
-  .search{
-    width: 80%;
-    height: 2rem;
-  }
-  #artistId{
-    width: 100%;
-    display: block;
-  }
-  #albumId{
-    width: 100%;
-    display: block;
-  }
-  .search:focus{
-    width: 80%;
-    height: 2rem;
-  }
-  #titlesAA{
-    display: inline-flex;
-  }
-  #labelArtists{
-    margin-left: 10%;
-  }
-  #labelAlbums{
-    margin-right: 12%;
-  }
-  #sectionViewHome {
-    position: relative;
-    width: 100%;
-    margin-top: 0px;
-    display: inline-block;
-    top: 50%;
-    height: auto;
-    text-align: center;
-  }
-  #artistId{
-    width: 40%; 
-    float: left;
-    display: inline;
-    margin-top: 0rem;  
-    color: #FFF;
-    margin-left: 10%;
-  }
-  #albumId{
-    width: 40%; 
-    float: right;
-    display: inline;
-    margin-top: 0rem;
-    color: #FFF;
-    margin-right: 10%;
-  }
-  .imgSearch{
-    width: 8rem;
-    height: 8rem;
-  }
-  .aname{
-    height: 5rem;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-/*------------------------us2-us3--------------------------*/
-#allartist{
-width: 100%;
-height: auto;
-margin-right: 0;
-margin-left: 0;
+/*us5-us6*/
+
+#tracksTable{
+text-align: left;
+color: #FFF;
+margin-right: 3rem;
+font-size: 1.3rem;
+width: 34rem;
+border-spacing: 20%;
+float: right;
+margin-top: -41%;
+width: 49%;
+position: relative;
+clear: right;
 }
-#artist{
-margin: auto;
+
+td, tr, th{
+border-bottom: 0.1rem solid #FFF;
 }
-#allalbm{
-width: 80%;
-}
-#artist img{
-display:block;
-margin-bottom: 0;
-width: 100%;
-height: auto;
-margin-left: auto;
-margin-right: auto;
-}
-#artist h2{
-font-size: 3rem;
-text-align: justify;
-margin-left: auto;
-}
-#text{
-margin-left: 0;
-margin-right: auto;
-width: 100%;
-}
-#containeral{
-  padding-left: 0;
-}
-#showalb{
-width: 80%;
-margin-left: auto;
-margin-right: auto;
-opacity: 1;
-}
-#albums li {
-margin:0 0 0 0;
+#coveralb{
 width: 50%;
 }
-#albums img{
+#imgAlbum{
 width: 80%;
-height: 10rem;
+height: auto;
+margin: auto;
+display: block;
 }
-#namealb {
-width: 100%;
-text-align: center;
-height: 16rem;
+
+#artistTitle{
+color: #FFF;
+font-size: 2rem;
+text-align: left;
+margin-left: 3rem;
 }
-/*---------------------------end us2-us3------------------*/
+
+#albumNames{
+color: #FFF;
+font-size: 3rem;
+margin-left: 3rem;
+text-align: left;
 }
-@media screen and (max-width:480px){
+
+#popularityTitle{
+color: #FFF;
+font-size: 2rem;
+text-align: left;
+margin-left: 3rem;
+}
+
+#artGenre{
+color: #FFF;
+font-size: 2rem;
+text-align: left;
+margin-left: 3rem;
+}
+
+#artTit{
+text-decoration: none;
+color: #FFF;
+}
+
+a:hover{
+color: red;
+}
+#dur{
+width: 20%;
+}
+#track{
+width: 60%;
+}
+#num{
+width: 10%;
+}
+#disc{
+width: 10%;
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:768px){
   #logoSpotify{
-    width: 100%;
-    display: block;
-    height: auto;
+  width: 100%;
+  display: block;
+  height: auto;
   }
   #imgSpotify{
-    width: 10rem;
-    height: 5rem;
-    margin:0 auto 0 auto;
+  width: 10rem;
+  height: 5rem;
+  margin:0 auto 0 auto;
   }
   .fontConfig{
-    width: 100%;
-    display: block;
-    font-size: 1rem;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
   }
   #navSearch{
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
   }
   .search{
-    width: 80%;
-    height: 2rem;
-  }
-  #sectionViewHome {
-    position: relative;
-    width: 100%;
-    margin-top: 0px;
-    display: inline-block;
-    top: 50%;
-    height: auto;
-    margin-left: 0%;
-    text-align: center;
+  width: 80%;
+  height: 2rem;
   }
   #artistId{
-    width: 100%; 
-    float: none;
-    display: inline;
-    margin-top: 0rem;  
-    color: #FFF;
-    text-align: center;
-    margin-left: 0rem;
+  width: 100%;
+  display: block;
   }
   #albumId{
-    width: 100%; 
-    float: none;
-    display: inline;
-    margin-top: 0rem;
-    color: #FFF;
-    text-align: center;
-    margin-left: 0rem;
+  width: 100%;
+  display: block;
+  }
+  .search:focus{
+  width: 80%;
+  height: 2rem;
+  }
+  #titlesAA{
+  display: inline-flex;
+  }
+  #labelArtists{
+  margin-left: 10%;
+  }
+  #labelAlbums{
+  margin-right: 12%;
+  }
+  #sectionViewHome {
+  position: relative;
+  width: 100%;
+  margin-top: 0px;
+  display: inline-block;
+  top: 50%;
+  height: auto;
+  text-align: center;
+  }
+  #artistId{
+  width: 40%; 
+  float: left;
+  display: inline;
+  margin-top: 0rem;  
+  color: #FFF;
+  margin-left: 10%;
+  }
+  #albumId{
+  width: 40%; 
+  float: right;
+  display: inline;
+  margin-top: 0rem;
+  color: #FFF;
+  margin-right: 10%;
   }
   .imgSearch{
-    width: 10rem;
-    height: 10rem;
+  width: 8rem;
+  height: 8rem;
   }
   .aname{
-    height: 5rem;
-    font-size: 1.5rem;
-    text-align: center;
+  height: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  }
+  /*------------------------us2-us3--------------------------*/
+  #allartist{
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  #artist{
+  margin: auto;
+  }
+  #allalbm{
+  width: 80%;
+  }
+  #artist img{
+  display:block;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #artist h2{
+  font-size: 3rem;
+  text-align: justify;
+  margin-left: auto;
+  }
+  #text{
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+  }
+  #containeral{
+  padding-left: 0;
+  }
+  #showalb{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  }
+  #albums li {
+  margin:0 0 0 0;
+  width: 50%;
+  }
+  #albums img{
+  width: 80%;
+  height: 10rem;
+  }
+  #namealb {
+  width: 100%;
+  text-align: center;
+  height: 16rem;
+  }
+  /*---------------------------end us2-us3------------------*/
+  /*us5-us6*/
+  #coveralb{
+  width: 100%;
+  }
+  #imgAlbum{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  }
+
+  #tracksTable{
+  text-align: left;
+  color: #FFF;
+  font-size: 1.5rem;
+  border-spacing: 19;
+  width: 79%;
+  margin-top: 2rem;
+  }
+
+  #albumNames{
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+
+  }
+
+  #artistTitle{
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+
+  }
+  #popularityTitle{
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 0rem;
+  }
+
+  #artGenre{
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 0rem;
+  }
+  #dur{
+  width: 20%;
+  }
+  #track{
+  width: 60%;
+  }
+  #num{
+  width: 10%;
+  }
+  #disc{
+  width: 10%;
+  }
+/*-----------end us5-us6 --------------*/
+}
+
+
+@media screen and (max-width:480px){
+  #logoSpotify{
+  width: 100%;
+  display: block;
+  height: auto;
+  }
+  #imgSpotify{
+  width: 10rem;
+  height: 5rem;
+  margin:0 auto 0 auto;
+  }
+  .fontConfig{
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  }
+  #navSearch{
+  width: 100%;
+  display: block;
+  }
+  .search{
+  width: 80%;
+  height: 2rem;
+  }
+  #sectionViewHome {
+  position: relative;
+  width: 100%;
+  margin-top: 0px;
+  display: inline-block;
+  top: 50%;
+  height: auto;
+  margin-left: 0%;
+  text-align: center;
+  }
+  #artistId{
+  width: 100%; 
+  float: none;
+  display: inline;
+  margin-top: 0rem;  
+  color: #FFF;
+  text-align: center;
+  margin-left: 0rem;
+  }
+  #albumId{
+  width: 100%; 
+  float: none;
+  display: inline;
+  margin-top: 0rem;
+  color: #FFF;
+  text-align: center;
+  margin-left: 0rem;
+  }
+  .imgSearch{
+  width: 10rem;
+  height: 10rem;
+  }
+  .aname{
+  height: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
   }
   #listAA::-webkit-scrollbar
   {
-    width: 8px;
+  width: 8px;
   }
   #labelArtists{
-    display: none;
+  display: none;
   }
   #labelAlbums{
-    display:none;
+  display:none;
   }
   #labelArtists2{
-    display: inline-block;
-    color: #FFF;
+  display: inline-block;
+  color: #FFF;
   }
   #labelAlbums2{
-    display:inline-block;
-    color: #FFF;
+  display:inline-block;
+  color: #FFF;
   }
   /* ----------------------- us2-us3------------------------------*/
   #allartist{
-width: 100%;
-margin-right: 0;
-margin-left: 0;
-}
-#artist{
-margin: auto;
-width: 100%;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  #artist{
+  margin: auto;
+  width: 100%;
 
-}
-#allalbm{
-margin-left: 0;
-margin-right: 0;
-}
-#artist img{
-width: 100%;
-height: auto;
-margin-left: auto;
-margin-right: auto;
-}
-#artist h2{
-font-size: 3rem;
-text-align: justify;
-margin-left: auto;
-}
-#text{
-margin-left: 0;
-margin-right: auto;
-width: 100%;
-}
-#showalb{
-width: 80%;
-margin-left: auto;
-margin-right: auto;
-opacity: 1;
-}
-#containeral{
+  }
+  #allalbm{
+  margin-left: 0;
+  margin-right: 0;
+  }
+  #artist img{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #artist h2{
+  font-size: 3rem;
+  text-align: justify;
+  margin-left: auto;
+  }
+  #text{
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+  }
+  #showalb{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  }
+  #containeral{
   padding-left: 0;
+  }
+  #albums{
+  height: auto;
+  }
+  #albums li {
+  width: 100%;
+  height: auto;
+  }
+  #albums img{
+  width: 100%;
+  height: auto;
+  }
+  #albums h3{
+  text-align: center;
+  color:white;
+  font-family:Tahoma; 
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+  #namealb{
+  margin-bottom: 0px;
+  width: 100%;
+  height: auto;
+  }
+  /*--------------------end us2-us3 -------------------------*/
+  /*us5-us6*/
+  #coveralb{
+  width: 100%;
+  }
+  #imgAlbum{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  margin-left: 0px;
+
+  }
+
+  #tracksTable{
+  text-align: left;
+  color: #FFF;
+  font-size: 1rem;
+  border-spacing: 0rem;
+  width: 79%;
+  margin-top: 2rem;
+  }
+
+  #albumNames{
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 0rem;
+  }
+
+  #popularityTitle{
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 0rem;
+  }
+
+  #artistTitle{
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 0rem;
+  }
+
+  #artGenre{
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 0rem;
+  }
+  #dur{
+  width: 20%;
+  }
+  #track{
+  width: 60%;
+  }
+  #num{
+  width: 10%;
+  }
+  #disc{
+  width: 10%;
+  }
+/*-----------end us5-us6 --------------*/
 }
-#albums{
-height: auto;
-}
-#albums li {
-width: 100%;
-height: auto;
-}
-#albums img{
-width: 100%;
-height: auto;
-}
-#albums h3{
-text-align: center;
-color:white;
-font-family:Tahoma; 
-font-size: 1.5rem;
-font-weight: bold;
-}
-#namealb{
-    margin-bottom: 0px;
-    width: 100%;
-    height: auto;
-}
-/*--------------------end us2-us3 -------------------------*/
-}
+
 /*-------------------START OF US4--------------------------*/
 #allre{
-  width: 100%;
-  display: inline-block;
+width: 100%;
+display: inline-block;
 }
 #recontaineral {
-  height: auto;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
+height: auto;
+width: 100%;
+text-align: center;
+display: inline-block;
 }
 #reartist{
-  text-align:center;
-  display: inline-block;
+text-align:center;
+display: inline-block;
 }
 #reartist li {
-  list-style:none;
-  float:left;
-  margin:1rem;
-  font-weight:bold;
-  color:#777777;
+list-style:none;
+float:left;
+margin:1rem;
+font-weight:bold;
+color:#777777;
 }
 #reartist img{
-  width: 10rem;
-  height: 10rem;
-  display: hidden;
+width: 10rem;
+height: 10rem;
+display: hidden;
 }
 #reartist h3{
-  font-size: 1.35rem;
-  -webkit-text-stroke: 0.1rem black;
+font-size: 1.35rem;
+-webkit-text-stroke: 0.1rem black;
 }
 #reartist a{
-  text-align:center;
-  text-decoration:none;
-  color:white;
-  font-weight: bold;
-  font-family:Tahoma; 
+text-align:center;
+text-decoration:none;
+color:white;
+font-weight: bold;
+font-family:Tahoma; 
 }
 #reartist a:hover{
-  color:red;
+color:red;
 }
 #retitle{
-  font-size: 3rem;
-  font-family: SansIns;
-  color:white;
-  font-weight: bold;
-  -webkit-text-stroke: 0.2rem black;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
+font-size: 3rem;
+font-family: SansIns;
+color:white;
+font-weight: bold;
+-webkit-text-stroke: 0.2rem black;
+text-align: center;
+width: 100%;
+display: inline-block;
 }
 #namereart{
-  width: 200px;
-  height: 100px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  text-align: center;
+width: 200px;
+height: 100px;
+margin-top: 0px;
+margin-right: 0px;
+margin-left: 0px;
+margin-bottom: 0px;
+text-align: center;
 }
 #contre{
-  width: 100%;
-  text-align: center;
-  display: inline-block;
+width: 100%;
+text-align: center;
+display: inline-block;
 }
-
-
 

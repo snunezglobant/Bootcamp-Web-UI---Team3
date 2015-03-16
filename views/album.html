@@ -1,0 +1,69 @@
+<div>
+  <h1 id="albumNames">
+    Album: {{album.name}} - ({{album.release_date | date:"yyyy"}})
+  </h1>
+  <h3 id="artistTitle">
+    <a id="artTit" href='#/artist/{{album.artists[0].id}}'>
+      Artist: {{album.artists[0].name}}
+    </a>
+  </h3>
+  <h3 id="artGenre" ng-show="artist.genres.length>0">
+    Genre:
+    <span  ng-repeat="genre in artist.genres">
+      {{genre +" " | capitalize}} 
+    </span>
+  </h3>
+  <h3 id="popularityTitle">
+    Popularity: {{album.popularity}}
+  </h3>
+  <section id="coveralb">
+    <img id="imgAlbum" ng-src="{{album.images[0].url}}"/>
+    <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" width="100 rem" height="100 rem"/>
+  </section>
+  <table id="tracksTable">
+    <th id="disc">
+      Disc
+    </th>
+    <th id="num">
+      N° 
+    </th>
+    <th id="track">
+      Tracks 
+    </th>
+    <th id="dur">
+      Duration 
+    </th>
+    <tbody>
+      <tr ng-repeat= "track in tracks">
+        <td> 
+          {{track.disc_number}}
+        </td>
+        <td>
+          {{track.track_number}}
+        </td>
+        <td>
+          {{track.name}}
+        </td>
+        <td>
+          {{track.duration_ms | date:"mm:ss"}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
