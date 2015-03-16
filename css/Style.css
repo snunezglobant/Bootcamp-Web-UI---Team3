@@ -1,5 +1,5 @@
 body{
-
+  overflow-x:hidden;
   background: url(../img/backgroundBody.jpg) no-repeat;
   background-attachment:fixed; 
   -webkit-background-size: cover;
@@ -9,45 +9,88 @@ body{
 }
 header{
   background-color: transparent;
-  height: 10rem;
   margin-top: 1rem;
   width: 100%;
   text-align: center;
 }
-
 @font-face{
   font-family:SansIns;
   src:url(../font//Sans%20Inserat.ttf);
 }
-
+/*****************************BANNER***********************************
+.hHome{
+width: 100%;
+height: auto;
+position: fixed;
+}
+.banner{
+background-image: url("../img/banner2.png");
+background-repeat: repeat-x;
+-webkit-border-radius: 1rem ;
+-moz-border-radius: 1rem ;
+border-radius: 1rem ;
+}
+.lHome{
+display: inline-block;
+vertical-align: top;
+}
+.logoHome{
+width:9rem; 
+height:auto;
+margin-left: 5rem;
+}
+.navSearch {
+display: inline-block;
+font-family: Gotham;
+vertical-align: top;
+margin-top: 0.8rem;
+background-color: transparent;
+float: right;
+margin-right: 5rem;
+color: #FFF;
+}
+.searchHome{
+background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
+/*border:inherit;*/
+/*width: 20rem;
+height: 2rem;
+padding-left: 2rem ;
+background-color:#FFF ;
+cursor: pointer ;
+/*-webkit-border-radius: 15rem ;
+-moz-border-radius: 15rem ;*/
+/*border-radius: 15rem ;
+/*-webkit-transition: all .5s ;
+-moz-transition: all .5s ;
+transition: all .5s ;
+*/
+/*}
+/****************************************END BANNER***********************************/
 #container{
   width: 100%;
-  height: auto; 
+  height: 100%; 
+  position: absolute;
 }
-
-#newAlbums{
-  width: 80rem;
-  margin-top: 20rem;
+.headerHome{
+  display: block;
+  position: relative;
+  height: auto;
+  vertical-align: top;
+  width: 100%;
+  text-align: center;
+  margin-top: 0rem;
 }
-
 #logoSpotify {
-  width: 20rem;
+  width: 100%;
   height: 10rem;
   background-color: transparent;
   margin-top: 0rem;
   display: inline-block;
-
 }
 #imgSpotify{
   width: 20rem;
   height: 10rem;
 }
-
-#navSearch {
-  background-color: transparent;
-  margin-top: 1rem;
-}
-
 .fontConfig{
   font-family: SansIns;
   color: #FFF;
@@ -57,8 +100,10 @@ header{
   display: block;
   text-align: center;
 }
-
-
+#navSearch {
+  background-color: transparent;
+  margin-top: 1rem;
+}
 input[type=search] {
   -webkit-appearance: textfield ;
   -webkit-box-sizing: content-box ;
@@ -69,16 +114,8 @@ input:focus{
   outline:0px ;
   -webkit-appearance:normal ;
 }
-
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-
-}
-
-#navs-search {
-  margin-left: -3.625rem;
-  display: inline-block;
-  margin-top: -3.4375rem;
 }
 .search{
   background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
@@ -86,22 +123,18 @@ input::-webkit-search-cancel-button {
   width: 47rem;
   height: 2.563rem;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
   background-color:#FFF ;
   cursor: pointer ;
-
   -webkit-border-radius: 15rem ;
   -moz-border-radius: 15rem ;
   border-radius: 15rem ;
 /*-webkit-transition: all .5s ;
 -moz-transition: all .5s ;
 transition: all .5s ;*/
-
 }
-
 .search:focus{
-  width: 47rem;
-  padding-rigth: 2rem ;
+  padding-right: 2rem ;
   color: #000 ;
   background-color: #FFF ;
   border-color: #0000FF ;
@@ -110,49 +143,76 @@ transition: all .5s ;*/
   -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
   box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
-
-
-#artistId>h1,#albumId>h1{
-  color: #FFF;
-
-}
 #sectionViewHome{
+  display: block;
   position: relative;
-  top: 50%;
   width: 100%;
   height: auto;
-  margin-top: 0px;
-  display: inline-block;
   text-align: center;
 }
-
+#titlesAA{
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+#labelArtists{
+  display: inline;
+  width: 40%;
+  float: left;
+  color: #FFF;
+}
+#labelAlbums{
+  display: inline;
+  width: 40%;
+  float: right;
+  color:#FFF;
+  margin-right: 12px;
+}
+#listAA{
+  width: 80%;
+  height: 25rem;
+  position: relative;
+  display:inline-block;
+  overflow-y:scroll;
+}
+#listAA::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #FFF;
+}
+#listAA::-webkit-scrollbar
+{
+  width: 12px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+#listAA::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #BCBCBC;
+}
 #artistId{
   width: 40%; 
   float: left;
   display: inline;
-  margin-top: 6rem;  
   color: #FFF;
-  margin-left: 4rem;
 }
-
 #albumId{
   width: 40%; 
   float: right;
   display: inline;
-  margin-top: 6rem;
   color: #FFF;
-  margin-right: 4rem;
 }
-
 .imgSearch{
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   text-align: center;
 }
 h1{
   text-align: center;
 }
-
 a{
   text-decoration: none;
   color: #fff;
@@ -164,6 +224,12 @@ a:hover{
   height: 5rem;
   font-size: 1.5rem;
   text-align: center;
+}
+#labelArtists2{
+  display: none;
+}
+#labelAlbums2{
+  display: none;
 }
 /*-----------------------us2-us3--------------------------------*/
 #allartist{
@@ -323,11 +389,8 @@ margin-right: 0;
 margin-left: 0;
 margin-bottom: 1rem;
 }
-
 /*-------------endus2-us3---------------------------------------*/
-
 @media screen and (min-width:480px) and (max-width:768px){
-
   #logoSpotify{
     width: 100%;
     display: block;
@@ -362,6 +425,15 @@ margin-bottom: 1rem;
   .search:focus{
     width: 80%;
     height: 2rem;
+  }
+  #titlesAA{
+    display: inline-flex;
+  }
+  #labelArtists{
+    margin-left: 10%;
+  }
+  #labelAlbums{
+    margin-right: 12%;
   }
   #sectionViewHome {
     position: relative;
@@ -451,9 +523,7 @@ text-align: center;
 height: 16rem;
 }
 /*---------------------------end us2-us3------------------*/
-
 }
-
 @media screen and (max-width:480px){
   #logoSpotify{
     width: 100%;
@@ -515,10 +585,27 @@ height: 16rem;
     font-size: 1.5rem;
     text-align: center;
   }
+  #listAA::-webkit-scrollbar
+  {
+    width: 8px;
+  }
+  #labelArtists{
+    display: none;
+  }
+  #labelAlbums{
+    display:none;
+  }
+  #labelArtists2{
+    display: inline-block;
+    color: #FFF;
+  }
+  #labelAlbums2{
+    display:inline-block;
+    color: #FFF;
+  }
   /* ----------------------- us2-us3------------------------------*/
   #allartist{
 width: 100%;
-
 margin-right: 0;
 margin-left: 0;
 }
@@ -580,5 +667,4 @@ font-weight: bold;
     height: auto;
 }
 /*--------------------end us2-us3 -------------------------*/
-
 }
