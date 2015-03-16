@@ -130,7 +130,6 @@ input::-webkit-search-cancel-button {
 transition: all .5s ;*/
 }
 .search:focus{
-  width: 47rem;
   padding-right: 2rem ;
   color: #000 ;
   background-color: #FFF ;
