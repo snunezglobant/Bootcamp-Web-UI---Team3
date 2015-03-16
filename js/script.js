@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
             controller: 'relatedCtrl',
             templateUrl: 'views/relatedartist.html'
         })
+        .when('/album/:idAlbum', {
+            controller: 'albumCtrl',
+            templateUrl: 'views/album.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -84,6 +88,25 @@ app.controller('relatedCtrl', ['$scope', '$http', '$routeParams', function($scop
         .success(function(data) {
             console.log(data);
             $scope.reartists = data.artists;
+        })
+        .error(function(err) {
+            console.log(err);
+        });
+}]);
+app.controller('albumCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    var idalbum = $routeParams.idAlbum
+    $http.get('https://api.spotify.com/v1/albums/' + idalbum)
+        .success(function(data) {
+            console.log(data);
+            $scope.album = data;
+        })
+        .error(function(err) {
+            console.log(err);
+        });
+    $http.get('https://api.spotify.com/v1/albums/' + idalbum + '/tracks')
+        .success(function(data) {
+            console.log(data);
+            $scope.tracks = data.items;
         })
         .error(function(err) {
             console.log(err);
