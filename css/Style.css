@@ -668,3 +668,71 @@ font-weight: bold;
 }
 /*--------------------end us2-us3 -------------------------*/
 }
+/*-------------------START OF US4--------------------------*/
+#allre{
+  width: 100%;
+  display: inline-block;
+}
+#recontaineral {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+#reartist{
+  text-align:center;
+  display: inline-block;
+}
+#reartist li {
+  list-style:none;
+  float:left;
+  margin:1rem;
+  font-weight:bold;
+  color:#777777;
+}
+#reartist img{
+  width: 10rem;
+  height: 10rem;
+  display: hidden;
+}
+#reartist h3{
+  font-size: 1.35rem;
+  -webkit-text-stroke: 0.1rem black;
+}
+#reartist a{
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  font-weight: bold;
+  font-family:Tahoma; 
+}
+#reartist a:hover{
+  color:red;
+}
+#retitle{
+  font-size: 3rem;
+  font-family: SansIns;
+  color:white;
+  font-weight: bold;
+  -webkit-text-stroke: 0.2rem black;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#namereart{
+  width: 200px;
+  height: 100px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+#contre{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
