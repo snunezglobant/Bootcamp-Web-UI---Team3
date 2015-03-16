@@ -9,6 +9,10 @@ app.config(function($routeProvider) {
             controller: 'artistCtrl',
             templateUrl: 'views/artist.html'
         })
+        .when('/relatedartist/:idArtist', {
+            controller: 'relatedCtrl',
+            templateUrl: 'views/relatedartist.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -73,3 +77,15 @@ app.filter("capitalize", function() {
         }
     }
 });
+app.controller('relatedCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    var idartist = $routeParams.idArtist;
+    //related artist  
+    $http.get('https://api.spotify.com/v1/artists/' + idartist + '/related-artists')
+        .success(function(data) {
+            console.log(data);
+            $scope.reartists = data.artists;
+        })
+        .error(function(err) {
+            console.log(err);
+        });
+}]);
