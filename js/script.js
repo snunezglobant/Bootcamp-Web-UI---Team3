@@ -46,11 +46,15 @@ app.controller('artistCtrl', ['$scope', '$http', '$routeParams', function($scope
         .error(function(err) {
             console.log(err);
         });
-    //button for hide albums list 
+    //button for hide or show albums list 
     $scope.albumState = {};
     $scope.albumState.show = false;
     $scope.changeState = function() {
         $scope.albumState.show = !$scope.albumState.show;
+        //move display to albums
+        setTimeout(function() {
+            window.scrollBy(0, 700);
+        }, 0);
     };
     //albumsartist
     $http.get('https://api.spotify.com/v1/artists/' + idartist + '/albums')
