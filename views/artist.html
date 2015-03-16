@@ -1,0 +1,35 @@
+<div id="allartist">
+  <section id="artist">
+    <article id="text">
+      <h3>Name: </h3>
+      <h2>{{artist.name}}</h2>
+      <h3 ng-show="artist.genres.length>0">Genre:
+        <span  ng-repeat="genre in artist.genres">{{genre +" " | capitalize}} </span>
+      </h3>
+      <h3>Popularity: {{artist.popularity}}</h3>
+      <h3><a href="#/relatedartist/{{artist.id}}">Related Artist</a></h3>
+    </article>
+    <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" alt="{{artist.name}}">
+    <img ng-show="artist.images.length<=0" src="img/perfilartist.jpg" width="100 rem" height="100 rem">
+  </section>
+  <a href="#/artist/{{artist.id}}" ng-click="changeState()" ><img id="showalb"src="img/botonalbum.png" alt="View Albums"/></a>
+  <div ng-show="albumState.show" class="secalbs">
+    <section id="allalbm" >
+      <article id="albtitle">
+        <h2>Albums</h2>
+      </article>
+      <div id ="containeral">
+        <section>
+          <ul ng-repeat="album in albums" id="albums">
+            <li >
+              <a href="#/album/{{album.id}}"> <img ng-show="album.images.length>0" ng-src="{{album.images[0].url}}" alt="{{album.name}}"/></a>
+              <a href="#/album/{{album.id}}" ><h3 id="namealb">{{album.name}}</h3></a>
+              <img ng-show="album.images.length<=0" src="img/perfilalbums.jpg"/>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </div>
+</div>
+

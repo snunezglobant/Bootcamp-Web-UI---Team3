@@ -2,6 +2,10 @@ body{
   overflow-x:hidden;
   background: url(../img/backgroundBody.jpg) no-repeat;
   background-attachment:fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 header{
   background-color: transparent;
@@ -227,6 +231,165 @@ a:hover{
 #labelAlbums2{
   display: none;
 }
+/*-----------------------us2-us3--------------------------------*/
+#allartist{
+width: 80%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+#artist{
+font-size:1.4rem;
+width: 80%;
+height:auto;
+position: relative;
+margin-right: auto;
+margin-left: auto;
+}
+#artist h3{
+color:white;
+font-size: 2.5rem;
+font-family: tahoma;
+-webkit-text-stroke: 0.125rem black;
+margin-top: 0;
+margin-bottom: 0;
+margin-right: auto;
+margin-left: 0;
+height: auto;
+bottom: 10%;
+top: 0;
+}
+#allalbm{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+#artist img{
+display:block;
+margin-top: 8rem;
+margin-left: 0;
+margin-bottom: 0;
+margin-right: 0;
+width: 50%;
+height: 26.25rem;
+}
+#showalb{
+top: 0;
+bottom: 0;
+left: auto;
+right: auto;
+height: auto;
+display: block;
+margin-top: 3%;
+margin-right: 0;
+margin-left: 10%;
+width: 55%;
+opacity:0.7;
+}
+#showalb:hover{
+opacity: 1;
+}
+#artist h2{
+margin-top: 0;
+margin-bottom: 0;
+padding-top: 0;
+padding-bottom: 0;
+font-size: 4rem;
+font-family: SansIns;
+color:white;
+font-weight: bold;
+-webkit-text-stroke: 0.2rem black;
+}
+#text{
+float:left;
+display: inline;
+height: 30%;
+width: 50%;
+margin-left: auto;
+margin-top: 0;
+}
+#containeral {
+position: relative;
+overflow: hidden;
+padding-left: 7%;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: auto;
+}
+.secalbs{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+#albums {
+padding-left: 0;
+width: 100%;
+margin-top: 0;
+margin-right: 0;
+margin-left:auto;
+margin-bottom: 0;
+}
+#albums li {
+list-style:none;
+float:left;
+margin:0.625rem;
+font-weight:bold;
+}
+#albums img{
+width: 11rem;
+height: 11rem;
+display:block;
+margin-left: auto;
+margin-right: auto;
+}
+#albums h3{
+color:white;
+font-family:Tahoma; 
+font-size: 1.5rem;
+font-weight: bold;
+}
+#albums a{
+text-align:center;
+text-decoration:none;
+color:white;
+font-weight: bold;
+font-family:Tahoma;
+-webkit-text-stroke: 0.1rem black;
+}
+#albums a:hover {
+color:red;
+}
+#artist a{
+color:#777777;
+-webkit-text-stroke: 0.2rem black;
+text-decoration:none;
+}
+#text a:hover{
+color:red;
+}
+#albtitle{
+width: 100%;
+height: auto;
+font-size: 2rem;
+font-family: SansIns;
+color:white;
+font-weight: bold;
+-webkit-text-stroke: 0.2rem black;
+text-align: center;
+}
+
+#namealb {
+width: 12.5rem;
+height: 12.5rem;
+margin-top: 0;
+margin-right: 0;
+margin-left: 0;
+margin-bottom: 1rem;
+}
+/*-------------endus2-us3---------------------------------------*/
 @media screen and (min-width:480px) and (max-width:768px){
   #logoSpotify{
     width: 100%;
@@ -306,6 +469,60 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
   }
+/*------------------------us2-us3--------------------------*/
+#allartist{
+width: 100%;
+height: auto;
+margin-right: 0;
+margin-left: 0;
+}
+#artist{
+margin: auto;
+}
+#allalbm{
+width: 80%;
+}
+#artist img{
+display:block;
+margin-bottom: 0;
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+#artist h2{
+font-size: 3rem;
+text-align: justify;
+margin-left: auto;
+}
+#text{
+margin-left: 0;
+margin-right: auto;
+width: 100%;
+}
+#containeral{
+  padding-left: 0;
+}
+#showalb{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+opacity: 1;
+}
+#albums li {
+margin:0 0 0 0;
+width: 50%;
+}
+#albums img{
+width: 80%;
+height: 10rem;
+}
+#namealb {
+width: 100%;
+text-align: center;
+height: 16rem;
+}
+/*---------------------------end us2-us3------------------*/
 }
 @media screen and (max-width:480px){
   #logoSpotify{
@@ -386,4 +603,68 @@ a:hover{
     display:inline-block;
     color: #FFF;
   }
+  /* ----------------------- us2-us3------------------------------*/
+  #allartist{
+width: 100%;
+margin-right: 0;
+margin-left: 0;
+}
+#artist{
+margin: auto;
+width: 100%;
+
+}
+#allalbm{
+margin-left: 0;
+margin-right: 0;
+}
+#artist img{
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+#artist h2{
+font-size: 3rem;
+text-align: justify;
+margin-left: auto;
+}
+#text{
+margin-left: 0;
+margin-right: auto;
+width: 100%;
+}
+#showalb{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+opacity: 1;
+}
+#containeral{
+  padding-left: 0;
+}
+#albums{
+height: auto;
+}
+#albums li {
+width: 100%;
+height: auto;
+}
+#albums img{
+width: 100%;
+height: auto;
+}
+#albums h3{
+text-align: center;
+color:white;
+font-family:Tahoma; 
+font-size: 1.5rem;
+font-weight: bold;
+}
+#namealb{
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+/*--------------------end us2-us3 -------------------------*/
 }
