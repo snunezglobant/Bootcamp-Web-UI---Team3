@@ -9,48 +9,56 @@
   <link rel="stylesheet" type="text/css" href="css/Style.css">
   <title>Proyect Team 3</title>
 </head>
-
 <body>  
-
   <div class="hHome" ng-controller="searchHome">
-
-    <section class="banner">
+    <header class="banner">
       <div class="lHome">
         <a href="#/">
           <img src="img/spotifylogo2.png" class="logoHome">
         </a>
       </div>
       <div class="navSearch">
-        <span><b>SEARCH: </b></span><input type="search" class="searchHome" ng-model="searchHome"/>
+        <span>
+          <b>
+            SEARCH: 
+          </b>
+        </span>
+        <input type="search" class="searchHome" ng-model="searchHome"/>
       </div>
-    </section>
-
+    </header>
     <div id="sectionView" ng-hide="searchHome==NULL">
       <div id="titlesAA2">
-        <h1 id="labelArtistsS">ARTISTS</h1>
-        <h1 id="labelAlbumsS">ALBUMS</h1>
+        <h1 id="labelArtistsS">
+          ARTISTS
+        </h1>
+        <h1 id="labelAlbumsS">
+          ALBUMS
+        </h1>
       </div>
       <hr/>
       <div id="listAA2">
         <div ng-show="artists.length>0" id="artistId2">
           <div ng-repeat="artist in artists">
-            <a class="linkAA" href="#/artist/{{artist.id}}">{{artist.name}}</a><hr>
+            <a class="linkAA" href="#/artist/{{artist.id}}">
+              {{artist.name}}
+            </a>
+            <hr>
           </div>
         </div>
-
         <div ng-show="albums.length>0" id="albumId2">
           <div ng-repeat="album in albums">
-            <a class="linkAA" href="#/album/{{album.id}}">{{album.name}}</a><hr>
+            <a class="linkAA" href="#/album/{{album.id}}">
+              {{album.name}}
+            </a>
+            <hr>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div ng-view></div>
-
-
-  <script src="http://code.jquery.com/jquery.js"> </script> 
+  <div ng-view>
+  </div>
+  <script src="http://code.jquery.com/jquery.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
   <script src="https://code.angularjs.org/1.3.14/angular-route.min.js"></script>
   <script src="js/script.js"> </script> 
