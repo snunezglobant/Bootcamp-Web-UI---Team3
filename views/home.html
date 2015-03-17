@@ -18,7 +18,7 @@
     <div id="listAA" >
       <div ng-show="artists.length>0" id="artistId">
         <h1 id="labelArtists2">ARTISTS</h1>
-        <div ng-repeat="artist in artists">
+        <div ng-repeat="artist in artists" class="AA">
           <a href="#/artist/{{artist.id}}">
             <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" class="imgSearch"  alt="{{artist.name}}">
             <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" class="imgSearch">
@@ -27,7 +27,7 @@
         </div>
         <div ng-show="albums.length>0" id="albumId">
           <h1 id="labelAlbums2">ALBUMS</h1>
-          <div ng-repeat="album in albums">
+          <div ng-repeat="album in albums" class="AA">
             <a href="#/album/{{album.id}}">
               <img ng-show="album.images.length>0" ng-src="{{album.images[1].url}}" alt="{{album.name}}" class="imgSearch">
               <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg" class="imgSearch">
