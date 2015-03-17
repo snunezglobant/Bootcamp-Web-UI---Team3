@@ -609,6 +609,7 @@ a:hover{
 #reartist{
   text-align:center;
   display: inline-block;
+  padding-left:0rem;
 }
 #reartist li {
   list-style:none;
