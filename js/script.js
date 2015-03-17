@@ -21,7 +21,44 @@ app.config(function($routeProvider) {
             redirectTo: '/'
         });
 });
+app.controller('searchHome', function($scope, $http) {
+    $(".searchHome").keyup(function() {
+        var band = $scope.searchHome;
+        if(band.length==0 || band=='NULL'){
+            $('#sectionView').css({'height':'0rem','-webkit-transition':'.3s','-moz-transition':'.3s','transition':'.3s'});
+        }
+        else
+        {
+            $('#sectionView').css({'height':'14rem','-webkit-transition':'.3s','-moz-transition':'.3s','transition':'.3s'});
+            $http.get('https://api.spotify.com/v1/search?type=artist&q=' + band)
+            .success(function(data) {
+                console.log(data);
+                $scope.artists = data.artists.items;
+            })
+            .error(function(err) {
+                return err;
+            });
+            $http.get('https://api.spotify.com/v1/search?type=album&q=' + band)
+            .success(function(data) {
+                console.log(data);
+                $scope.albums = data.albums.items;
+            })
+            .error(function(err) {
+                return err;
+            });
+
+            $('#listAA2').click(function(){
+                $('#sectionView').css({'height':'0rem','-webkit-transition':'.3s','-moz-transition':'.3s','transition':'.3s'});
+                $(".searchHome").focus();
+            });
+        }
+    });
+$('body').click(function(){
+    $('#sectionView').css({'height':'0rem','-webkit-transition':'.3s','-moz-transition':'.3s','transition':'.3s'});
+});
+});
 app.controller('searchCtrl', function($scope, $http) {
+    $('.hHome').css('display','none');
     $(".search").focus().keyup(function() {
         var band = $scope.search;
         $http.get('https://api.spotify.com/v1/search?type=artist&q=' + band)
@@ -44,6 +81,7 @@ app.controller('searchCtrl', function($scope, $http) {
     });
 });
 app.controller('artistCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $('.hHome').css('display','inline-block');
     var idartist = $routeParams.idArtist;
     //artist
     $http.get('https://api.spotify.com/v1/artists/' + idartist)
@@ -82,6 +120,7 @@ app.filter("capitalize", function() {
     }
 });
 app.controller('relatedCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $('.hHome').css('display','inline-block');
     var idartist = $routeParams.idArtist;
     //related artist  
     $http.get('https://api.spotify.com/v1/artists/' + idartist + '/related-artists')
@@ -94,6 +133,7 @@ app.controller('relatedCtrl', ['$scope', '$http', '$routeParams', function($scop
         });
 }]);
 app.controller('albumCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $('.hHome').css('display','inline-block');
     var idalbum = $routeParams.idAlbum
     $http.get('https://api.spotify.com/v1/albums/' + idalbum)
         .success(function(data) {
