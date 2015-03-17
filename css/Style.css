@@ -6,6 +6,7 @@ background-attachment:fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+margin: 0rem;
 }
 header{
 background-color: transparent;
@@ -17,54 +18,158 @@ text-align: center;
 font-family:SansIns;
 src:url(../font//Sans%20Inserat.ttf);
 }
-/*****************************BANNER***********************************
+/*****************************BANNER***********************************/
 .hHome{
-width: 100%;
-height: auto;
-position: fixed;
+  width: 100%;
+  position: fixed;
+  display: none;
 }
 .banner{
-background-image: url("../img/banner2.png");
-background-repeat: repeat-x;
--webkit-border-radius: 1rem ;
--moz-border-radius: 1rem ;
-border-radius: 1rem ;
+  background-image: url("../img/banner2.png");
+  background-repeat: repeat-x;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  border-radius: 1rem ;
+  height: 4rem;
+  margin-top: 0rem;
 }
 .lHome{
-display: inline-block;
-vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 .logoHome{
-width:9rem; 
-height:auto;
-margin-left: 5rem;
+  display: inline-block;
+  width:9rem; 
+  height:auto;
+  margin-left: 5rem;
+}
+.logoHome:hover{
+  width: 10rem;
+  height: auto;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 .navSearch {
-display: inline-block;
-font-family: Gotham;
-vertical-align: top;
-margin-top: 0.8rem;
-background-color: transparent;
-float: right;
-margin-right: 5rem;
-color: #FFF;
+  display: inline-block;
+  font-family: Gotham;
+  vertical-align: top;
+  margin-top: 0.8rem;
+  background-color: transparent;
+  float: right;
+  margin-right: 5rem;
+  color: #FFF;
 }
 .searchHome{
-background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
-/*border:inherit;*/
-/*width: 20rem;
-height: 2rem;
-padding-left: 2rem ;
-background-color:#FFF ;
-cursor: pointer ;
+  background:#ededed url(../img/zoom191.png) no-repeat 0.5625rem center ;
+  /*border:inherit;*/
+  width: 20rem;
+  height: 2rem;
+  padding-left: 2rem ;
+  background-color:#FFF ;
+  cursor: pointer ;
 /*-webkit-border-radius: 15rem ;
 -moz-border-radius: 15rem ;*/
-/*border-radius: 15rem ;
+border-radius: 15rem ;
 /*-webkit-transition: all .5s ;
 -moz-transition: all .5s ;
 transition: all .5s ;
 */
-/*}
+}
+#sectionView{
+  display: inline-block;
+  position: relative;
+  float: right;
+  background: #FFF;
+  width: 20rem;
+  height: 0rem;
+  overflow-x:hidden;
+  padding-left: 2rem;
+  vertical-align: top;
+  margin-right: 5rem;
+  color: #FFF;
+  z-index: 2;
+  -webkit-border-radius:  0 0 1rem 1rem ;
+  -moz-border-radius:  0 0 1rem 1rem ;
+  border-radius: 0 0 1rem 1rem;
+}
+#titlesAA2{
+  width: 90%;
+  position: relative;
+  display: inline-block;
+  height: 1.2rem;
+}
+#labelArtistsS{
+  width: 45%;
+  float: left;
+  text-align: left;
+  position: relative;
+  font-size: 1rem;
+  color: #000;
+}
+#labelAlbumsS{
+  width: 45%;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: #000;
+  float: right;
+  margin-right: 6px;
+}
+#albumId2{
+  width: 45%; 
+  height: 10rem;
+  float: right;
+  text-align: left;
+  display: inline;
+  color: #000;
+
+}
+#artistId2{
+  width: 45%;
+  height: 10rem; 
+  float: left;
+  text-align: left;
+  display: inline;
+  color: #000;
+
+}
+#listAA2{
+  width: 90%;
+  height: 10rem;
+  position: relative;
+  display:inline-block;
+  overflow-y:scroll;
+  color: #000;
+  overflow-x:hidden;
+
+}
+#listAA2::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #FFF;
+}
+#listAA2::-webkit-scrollbar
+{
+  width: 8px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+#listAA2::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #BCBCBC;
+}
+#artistId2>div>a{
+  color: #000;
+}
+#albumId2>div>a{
+  color: #000;
+}
 /****************************************END BANNER***********************************/
 #container{
 width: 100%;
@@ -209,6 +314,14 @@ color: #FFF;
 width: 10rem;
 height: 10rem;
 text-align: center;
+}
+.imgSearch:hover{
+  width: 11rem;
+  height: 11rem;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 h1{
 text-align: center;
@@ -472,6 +585,54 @@ width: 10%;
 
 
 @media screen and (min-width:480px) and (max-width:768px){
+  /*****************************BANNER***********************************/
+  .banner{
+    background-image: url("../img/banner2.png");
+    background-repeat: repeat-x;
+    height: 2.5rem;
+    -webkit-border-radius: 1rem ;
+    -moz-border-radius: 1rem ;
+    border-radius: 1rem ;
+  }
+
+  .logoHome{
+    width:auto; 
+    height:2rem;
+    margin-left: 3rem;
+  }
+  .logoHome:hover{
+    width: auto;
+    height: 2.3rem;
+  }
+  .navSearch {
+    margin-top: 0.3rem;
+    margin-right: 3rem;
+    font-size: 0.7rem;
+  }
+  .searchHome{
+    width: 10rem;
+    height: 1.5rem;
+  }
+  #sectionView{
+    font-size: 0.7rem;
+    width: 10rem;
+    height: 0rem;
+    margin-right: 3rem;
+  }
+  #titlesAA2{
+    height: 1rem;
+  }
+  #labelArtistsS{
+    font-size: 0.7rem;
+  }
+  #labelAlbumsS{
+    font-size: 0.7rem;
+  }
+  #listAA2::-webkit-scrollbar
+  {
+    width: 6px;
+  }
+  /****************************************END BANNER***********************************/
   #logoSpotify{
   width: 100%;
   display: block;
@@ -544,6 +705,10 @@ width: 10%;
   .imgSearch{
   width: 8rem;
   height: 8rem;
+  }
+  .imgSearch:hover{
+    width: 9rem;
+    height: 9rem;
   }
   .aname{
   height: 5rem;
@@ -668,6 +833,17 @@ width: 10%;
 
 
 @media screen and (max-width:480px){
+  /*****************************BANNER***********************************/
+  .hHome{
+    display: none;
+  }
+  .banner{
+    display: none;
+  }
+  #sectionView{
+    display: none;
+  }
+  /****************************************END BANNER***********************************/
   #logoSpotify{
   width: 100%;
   display: block;
