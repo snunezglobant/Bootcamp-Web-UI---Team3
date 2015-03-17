@@ -23,7 +23,7 @@
       </h3>
     </article>
     <img ng-show="artist.images.length>0" ng-src="{{artist.images[0].url}}" alt="{{artist.name}}"/>
-    <img ng-show="artist.images.length<=0" src="img/perfilartist.jpg" width="100 rem" height="100 rem"/>
+    <img ng-show="artist.images.length<=0" src="img/perfilartist2.jpg" width="100 rem" height="100 rem"/>
   </section>
   <a href="#/artist/{{artist.id}}" ng-click="changeState()">
     <img id="showalb"src="img/botonalbum.png" alt="View Albums"/>
@@ -41,7 +41,7 @@
             <li ng-repeat="album in albums">
               <a href="#/album/{{album.id}}">
                 <img ng-show="album.images.length>0" ng-src="{{album.images[0].url}}" alt="{{album.name}}"/>
-                <img ng-show="album.images.length<=0" src="img/perfilalbums.jpg"/>
+                <img ng-show="album.images.length<=0" src="img/perfilalbums2.jpg"/>
               </a>
               <a href="#/album/{{album.id}}" >
                 <h3 id="namealb">
