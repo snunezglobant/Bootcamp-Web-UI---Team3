@@ -576,12 +576,12 @@ td, tr, th{
   text-align: left;
   margin-left: 3rem;
 }
-#artTit{
-  text-decoration: none;
+#artistTitle{
   color: #FFF;
+  text-decoration: none;
 }
-a:hover{
-  color: red;
+
+a:hover{color: red}
 }
 #dur{
   width: 20%;
