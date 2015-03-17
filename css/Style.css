@@ -32,6 +32,9 @@ header{
   border-radius: 1rem ;
   height: 4rem;
   margin-top: 0rem;
+  -webkit-box-shadow: 0 0  0.3125rem #000 ;
+  -moz-box-shadow: 0 0  0.3125rem #000 ;
+  box-shadow: 0 0  2.3125rem #000 ;
 }
 .lHome{
   display: inline-block;
@@ -134,7 +137,6 @@ transition: all .5s ;
   text-align: left;
   display: inline;
   color: #000;
-
 }
 #listAA2{
   width: 90%;
@@ -298,6 +300,9 @@ transition: all .5s ;*/
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #BCBCBC;
 }
+.AA{
+  margin-top: 1rem;
+}
 #artistId{
   width: 40%; 
   float: left;
@@ -313,7 +318,10 @@ transition: all .5s ;*/
 .imgSearch{
   width: 10rem;
   height: 10rem;
-  text-align: center;
+  text-align: center; 
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 .imgSearch:hover{
   width: 11rem;
@@ -385,6 +393,9 @@ a:hover{
   margin-right: 0;
   width: 50%;
   height: 26.25rem;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 #showalb{
   top: 0;
@@ -455,6 +466,9 @@ a:hover{
   display:block;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 /*#albums img:hover{
 width: 12rem;
@@ -499,7 +513,6 @@ transition: .5s;
   -webkit-text-stroke: 0.2rem black;
   text-align: center;
 }
-
 #namealb {
   width: 12.5rem;
   height: 12.5rem;
@@ -510,7 +523,6 @@ transition: .5s;
 }
 /*-------------endus2-us3---------------------------------------*/
 /*us5-us6*/
-
 #tracksTable{
   text-align: left;
   color: #FFF;
@@ -524,7 +536,6 @@ transition: .5s;
   position: relative;
   clear: right;
 }
-
 td, tr, th{
   border-bottom: 0.1rem solid #FFF;
 }
@@ -537,41 +548,38 @@ td, tr, th{
   margin: auto;
   display: block;
   margin-left: 3rem;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
-
 #artistTitle{
   color: #FFF;
   font-size: 2rem;
   text-align: left;
   margin-left: 3rem;
 }
-
 #albumNames{
   color: #FFF;
   font-size: 3rem;
   margin-left: 3rem;
   text-align: left;
 }
-
 #popularityTitle{
   color: #FFF;
   font-size: 2rem;
   text-align: left;
   margin-left: 3rem;
 }
-
 #artGenre{
   color: #FFF;
   font-size: 2rem;
   text-align: left;
   margin-left: 3rem;
 }
-
 #artTit{
   text-decoration: none;
   color: #FFF;
 }
-
 a:hover{
   color: red;
 }
@@ -613,6 +621,9 @@ a:hover{
   width: 10rem;
   height: 10rem;
   display: hidden;
+  -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
+  box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 #reartist img:hover{
   width: 10.5rem;
@@ -622,7 +633,6 @@ a:hover{
   -o-transition: .5s;
   transition: .5s;
 }
-
 #reartist h3{
   font-size: 1.35rem;
   -webkit-text-stroke: 0.1rem black;
@@ -672,7 +682,6 @@ a:hover{
     -moz-border-radius: 1rem ;
     border-radius: 1rem ;
   }
-
   .logoHome{
     width:auto; 
     height:2rem;
