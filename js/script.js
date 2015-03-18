@@ -117,7 +117,7 @@ app.controller('artistCtrl', ['$scope', '$http', '$routeParams', function($scope
         $scope.albumState.show = !$scope.albumState.show;
         //move display to albums
         setTimeout(function() {
-            window.scrollBy(0, 670);
+            window.scrollBy(0, 590);
         }, 0);
     };
     //albumsartist
