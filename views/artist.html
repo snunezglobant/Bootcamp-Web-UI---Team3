@@ -2,19 +2,19 @@
   <section id="artist">
     <article id="text">
       <h3>
-        Name: 
+        NAME: 
       </h3>
       <h2>
         {{artist.name}}
       </h2>
       <h3 ng-show="artist.genres.length>0">
-        Genre:
+        GENRE:
         <span  ng-repeat="genre in artist.genres">
           {{genre +" " | capitalize}}
         </span>
       </h3>
       <h3>
-        Popularity: {{artist.popularity}}
+        POPULARITY: {{artist.popularity}}
       </h3>
       <h3>
         <a href="#/relatedartist/{{artist.id}}">
@@ -35,7 +35,7 @@
     <section id="allalbm" >
       <article id="albtitle">
         <h2>
-          Albums
+          ALBUMS
         </h2>
       </article>
       <div id ="containeral">
