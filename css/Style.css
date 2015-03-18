@@ -379,7 +379,7 @@ margin-right: auto;
 margin-left: auto;
 }
 #artist h3{
-color:white;
+color:#FFF;
 font-size: 2.5rem;
 font-family: tahoma;
 -webkit-text-stroke: 0.125rem #000000;
@@ -427,7 +427,7 @@ padding-top: 0;
 padding-bottom: 0;
 font-size: 4rem;
 font-family: Tahoma;
-color:white;
+color:#FFF;
 font-weight: bold;
 -webkit-text-stroke: 0.2rem #000000;
 -moz-text-stroke: 0.2rem #000000;
@@ -488,7 +488,7 @@ height: 12rem;
 transition: .5s;
 }
 #albums h3{
-color:white;
+color:#FFF;
 font-family:Tahoma; 
 font-size: 1.5rem;
 font-weight: bold;
@@ -496,7 +496,7 @@ font-weight: bold;
 #albums a{
 text-align:center;
 text-decoration:none;
-color:white;
+color:#FFF;
 font-weight: bold;
 font-family:Tahoma;
 -webkit-text-stroke: 0.1rem #000000;
@@ -519,7 +519,7 @@ width: 100%;
 height: auto;
 font-size: 2rem;
 font-family: Tahoma;
-color:white;
+color:#FFF;
 font-weight: bold;
 -webkit-text-stroke: 0.2rem #000000;
 -moz-text-stroke: 0.2rem #000000;
@@ -559,6 +559,9 @@ font-family: tahoma;
 font-weight: bold;
 -webkit-text-stroke: 0.1rem #000000;
 -moz-text-stroke: 0.1rem #000000;
+display: inline-block;
+left: 2rem;
+
 }
 td, tr, th{
 border-bottom: 0.1rem solid #FFF;
@@ -647,23 +650,24 @@ display: inline-block;
 padding-left:0rem;
 }
 #reartist li {
-list-style:none;
-float:left;
-margin:1rem;
-font-weight:bold;
-color:#777777;
+list-style: none;
+float: left;
+height: 18.75rem;
+margin: 1rem;
 }
 #reartist img{
-width: 10rem;
-height: 10rem;
-display: hidden;
+width: 11rem;
+height: 11rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
 -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
 -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
 box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
 }
 #reartist img:hover{
-width: 10.5rem;
-height: 10.5rem;
+width: 12rem;
+height: 12rem;
 -moz-transition: .5s;
 -webkit-transition: .5s;
 -o-transition: .5s;
@@ -677,7 +681,7 @@ font-size: 1.35rem;
 #reartist a{
 text-align:center;
 text-decoration:none;
-color:white;
+color:#FFF;
 font-weight: bold;
 font-family:Tahoma; 
 }
@@ -687,25 +691,25 @@ color:#DF0101;
 #retitle{
 font-size: 3rem;
 font-family: Tahoma;
-color:white;
+color:#FFF;
 font-weight: bold;
 -webkit-text-stroke: 0.2rem #000000;
 -moz-text-stroke: 0.2rem #000000;
 text-align: center;
-width: 100%;
 display: inline-block;
+width: 100%;
 }
-#namereart{
+#reartist #namereart{
 width: 12.5rem;
-height: 6.25rem;
+height:10rem;
 margin-top: 0;
 margin-right: 0;
 margin-left: 0;
-margin-bottom: 0;
+margin-bottom: 1rem;
 text-align: center;
 }
 #contre{
-width: 100%;
+width: 90%;
 text-align: center;
 display: inline-block;
 }
@@ -902,6 +906,7 @@ display: inline-block;
   text-align: center;
   height: 16rem;
   }
+
   /*---------------------------end us2-us3------------------*/
   /*us5-us6*/
   #coveralb{
@@ -918,8 +923,9 @@ display: inline-block;
   color: #FFF;
   font-size: 1.5rem;
   border-spacing: 19;
-  width: 79%;
   margin-top: 2rem;
+  width: 100%;
+  margin-right: 2rem;
   }
   #albumNames{
   color: #FFF;
@@ -957,9 +963,12 @@ display: inline-block;
   #disc{
   width: 10%;
   }
-/*-----------end us5-us6 --------------*/
+  /*-----------end us5-us6 --------------*/
 }
-  @media screen and (max-width:480px){
+@media screen and (max-width:480px){
+  body{
+  background: #000 no-repeat;
+  }
   /*****************************BANNER***********************************/
   .hHome{
   display: none;
@@ -1106,15 +1115,42 @@ display: inline-block;
 
   #albums h3{
   text-align: center;
-  color:white;
+  color:#FFF;
   font-family:Tahoma; 
   font-size: 1.5rem;
   font-weight: bold;
   }
-  #namealb{
+  #albums #namealb{
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 0;
   width: 100%;
   height: auto;
+  }
+  #reartist li{
+  height: auto;
+  margin: auto;
+  }
+  #reartist #namereart{
+  text-align: center;
+  width: 100%;
+  height:auto;
+  margin:auto;
+  margin-bottom: 3rem;
+  }
+  #reartist img{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 1rem;
+  }
+  #reartist img:hover{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  }
+  #contre{
+  width: 100%;
   }
   /*--------------------end us2-us3 -------------------------*/
   /*us5-us6*/
@@ -1133,8 +1169,9 @@ display: inline-block;
   color: #FFF;
   font-size: 1rem;
   border-spacing: 0rem;
-  width: 79%;
   margin-top: 2rem;
+  width: 100%;
+  margin-right: 2rem;
   }
   #albumNames{
   color: #FFF;
@@ -1151,7 +1188,7 @@ display: inline-block;
   }
   #artistTitle{
   color: #FFF;
-  font-size: 1rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-left: 0rem;
   }
