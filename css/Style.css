@@ -21,14 +21,6 @@ header{
   src:url(../font//Sans%20Inserat.ttf);
 }
 /*****************************BANNER***********************************/
-#sectionView{
-  position: relative; 
-  display: inline-block; 
-  height: 14rem; 
-  -webkit-transition: 0.3s;
-  transition: 0.3s; 
-  margin-top: 0; top: 4rem;
-}
 .hHome{
   width: 100%;
   position: fixed;
@@ -100,6 +92,12 @@ header{
   margin-right: 5rem;
   color: #FFF;
   z-index: 2;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; 
+  margin-top: 0; 
+  top: 4rem;
   -webkit-border-radius:  0 0 1rem 1rem;
   -moz-border-radius:  0 0 1rem 1rem;
   border-radius: 0 0 1rem 1rem;
@@ -367,17 +365,18 @@ a:hover{
 }
 /*-----------------------us2-us3--------------------------------*/
 #allartist{
-  width: 80%;
+  width: 95%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -3%;
 }
 #artist{
   font-size:1.4rem;
-  width: 80%;
   height:auto;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 #artist h3{
   color:#FFF;
@@ -404,8 +403,8 @@ a:hover{
   margin-left: 0;
   margin-bottom: 0;
   margin-right: 0;
-  width: 50%;
-  height: 26.25rem;
+  width: 30%;
+  height: auto;
   -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
   -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
   box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
@@ -442,24 +441,24 @@ a:hover{
   margin-top: 0;
 }
 #containeral {
-  overflow: hidden;
-  padding-left: 7%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
+  text-align: center;
 }
 .secalbs{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 #albums {
-  padding-left: 0;
   width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0;
   margin-top: 0;
   margin-right: 0;
-  margin-left:auto;
   margin-bottom: 0;
 }
 #albums li {
@@ -517,7 +516,7 @@ a:hover{
   color:#DF0101;
 }
 #albtitle{
-  width: 100%;
+  width: 80%;
   height: auto;
   font-size: 2rem;
   font-family: Tahoma;
@@ -526,6 +525,8 @@ a:hover{
   -webkit-text-stroke: 0.2rem #000000;
   -moz-text-stroke: 0.2rem #000000;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 #albums #namealb {
   width: 12.5rem;
@@ -542,8 +543,6 @@ a:hover{
   margin-right: auto;
   margin-left: auto;
   margin-top: 5%;
-
-
 }
 #tracksTable{
   text-align: left;
@@ -563,7 +562,6 @@ a:hover{
   -moz-text-stroke: 0.1rem #000000;
   display: inline-block;
   left: 2rem;
-
 }
 td, tr, th{
   border-bottom: 0.1rem solid #FFF;
@@ -606,7 +604,6 @@ td, tr, th{
   -webkit-text-stroke: 0.1rem #000000;
   -moz-text-stroke: 0.1rem #000000;
   font-family: Tahoma;
-
 }
 #albumdata #artGenre{
   color: #FFF;
@@ -614,13 +611,11 @@ td, tr, th{
   text-align: left;
   margin-left: 3rem;
 }
-
 #artTit{
   font-family: tahoma;
   -webkit-text-stroke: 0.1rem #000000;
   -moz-text-stroke: 0.1rem #000000;
 }
-
 a:hover{color: #DF0101}
 
 #dur{
@@ -692,6 +687,12 @@ a:hover{color: #DF0101}
 }
 #reartist a:hover{
   color:#DF0101;
+}
+#reartist li{
+   display: inline-block;
+   vertical-align: top;
+   height: auto;
+   margin: auto;
 }
 #retitle {
   font-size: 3rem;
@@ -848,6 +849,10 @@ a:hover{color: #DF0101}
     width: 9rem;
     height: 9rem;
   }
+  .imgSearch:hover {
+  width: 11rem;
+  height: 11rem;
+}
   .aname{
     height: 5rem;
     font-size: 1.5rem;
@@ -897,22 +902,20 @@ a:hover{color: #DF0101}
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-
   }
   #albums li {
-    margin:0 0 0 0;
-    width: 50%;
+    margin:3%;
+    width: 10rem;
   }
   #albums img{
-    width: 80%;
+    width: 10rem;
     height: 10rem;
   }
-  #namealb {
-    width: 100%;
+ #albums #namealb {
+    width: 10rem;
     text-align: center;
     height: 16rem;
   }
-
   /*---------------------------end us2-us3------------------*/
   /*us5-us6*/
   #coveralb{
@@ -956,7 +959,6 @@ a:hover{color: #DF0101}
     text-align: center;
     margin-left: 0rem;
   }
-
   #dur{
     width: 20%;
   }
@@ -976,32 +978,66 @@ a:hover{color: #DF0101}
     background: #000 no-repeat;
   }
   /*****************************BANNER***********************************/
-  .hHome{
-    display: none;
-  }
   #hideSpan{
-    display: none;
+    display: block;
   }
   .banner{
-    /*display: none;*/
+    background: #3E3E3E;
     height: 8rem;
-    background: #808080;
+    text-align: center;
   }
   .lHome{
     float: none;
+    display: block;
   }
-  .logoHome {
-    margin-left: 110%;
-  }
+  .logoHome{
+  display: inline-block;
+  width:7rem; 
+  height:auto;
+  margin-left: 0rem;
+}
+.logoHome:hover{
+  width: 8rem;
+  height: auto;
+}
+.searchHome{
+  width: 80%;
+  display: block;
+}
   .navSearch {
     float: none;
-    margin-left: 11%;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   #sectionView{
-    display: block;
-    margin-right: 12.1%;
-    margin-top: 12%;
-  }
+  display: block;
+  position: relative;
+  float: none;
+  background: #FFF;
+  width: 100%;
+  height: 0rem;
+  overflow-x:hidden;
+  padding-left: 0rem;
+  vertical-align: top;
+  margin-right: 0rem;
+  color: #FFF;
+  z-index: 2;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; 
+  margin-top: 0; 
+  top: 8rem;
+  -webkit-border-radius:1rem;
+  -moz-border-radius:1rem;
+  border-radius:1rem;
+} 
+#titlesAA2{
+  padding-left: 2rem;
+}
+#listAA2{
+  padding-left: 2rem;
+}
   #albumdata {
     margin-top: 30%;
   }
@@ -1100,7 +1136,7 @@ a:hover{color: #DF0101}
     margin-right: 0;
   }
   #artist img{
-    width: 100%;
+    width: 15rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -1118,7 +1154,6 @@ a:hover{color: #DF0101}
   #artist #showalb{
     width: 100%;
     opacity: 1;
-
   }
   #containeral{
     padding-left: 0;
@@ -1131,20 +1166,18 @@ a:hover{color: #DF0101}
     height: auto;
   }
   #albums img{
-    width: 100%;
-    height: auto;
+    width: 10rem;
+    height: 10rem;
   }
   #albums img:hover{
-    width: 100%;
-    height: auto;
-
+    width: 11rem;
+    height: 11rem;
   }
-
   #albums h3{
     text-align: center;
     color:#FFF;
     font-family:Tahoma; 
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
   }
   #albums #namealb{
@@ -1155,6 +1188,7 @@ a:hover{color: #DF0101}
     height: auto;
   }
   #reartist li{
+    display: block;
     height: auto;
     margin: auto;
   }
@@ -1166,8 +1200,8 @@ a:hover{color: #DF0101}
     margin-bottom: 3rem;
   }
   #reartist img{
-    width: 80%;
-    height: auto;
+    width: 10rem;
+    height: 10rem;
     margin: auto;
     margin-bottom: 1rem;
   }
@@ -1251,6 +1285,9 @@ a:hover{color: #DF0101}
   }
   #albumdata #popularityTitle {
     margin-left: 0rem; 
+  }
+  #albums li{
+    margin: 0rem;
   }
   /*-----------end us5-us6 --------------*/
 }
