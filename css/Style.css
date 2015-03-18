@@ -367,17 +367,20 @@ a:hover{
 }
 /*-----------------------us2-us3--------------------------------*/
 #allartist{
-  width: 80%;
+  width: 95%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -3%;
 }
 #artist{
   font-size:1.4rem;
-  width: 80%;
   height:auto;
   margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
 }
 #artist h3{
   color:#FFF;
@@ -404,8 +407,8 @@ a:hover{
   margin-left: 0;
   margin-bottom: 0;
   margin-right: 0;
-  width: 50%;
-  height: 26.25rem;
+  width: 30%;
+  height: auto;
   -webkit-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
   -moz-box-shadow: 0 0  0.3125rem rgba(109,207,246,.5) ;
   box-shadow: 0 0  2.3125rem rgba(109,207,246,.5) ;
@@ -440,26 +443,27 @@ a:hover{
   width: 50%;
   margin-left: auto;
   margin-top: 0;
+  margin-right: 5%;
+
 }
 #containeral {
-  overflow: hidden;
-  padding-left: 7%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 .secalbs{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 #albums {
-  padding-left: 0;
   width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0;
   margin-top: 0;
   margin-right: 0;
-  margin-left:auto;
   margin-bottom: 0;
 }
 #albums li {
@@ -517,7 +521,7 @@ a:hover{
   color:#DF0101;
 }
 #albtitle{
-  width: 100%;
+  width: 80%;
   height: auto;
   font-size: 2rem;
   font-family: Tahoma;
@@ -526,6 +530,8 @@ a:hover{
   -webkit-text-stroke: 0.2rem #000000;
   -moz-text-stroke: 0.2rem #000000;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 #albums #namealb {
   width: 12.5rem;
@@ -542,8 +548,6 @@ a:hover{
   margin-right: auto;
   margin-left: auto;
   margin-top: 5%;
-
-
 }
 #tracksTable{
   text-align: left;
@@ -900,15 +904,15 @@ a:hover{color: #DF0101}
 
   }
   #albums li {
-    margin:0 0 0 0;
-    width: 50%;
+    margin:3%;
+    width: 10rem;
   }
   #albums img{
-    width: 80%;
+    width: 10rem;
     height: 10rem;
   }
-  #namealb {
-    width: 100%;
+ #albums #namealb {
+    width: 10rem;
     text-align: center;
     height: 16rem;
   }
