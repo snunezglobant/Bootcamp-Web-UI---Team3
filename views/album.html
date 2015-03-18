@@ -1,20 +1,20 @@
 <div id="albumdata">
   <h1 id="albumNames">
-    Album: {{album.name}} - ({{album.release_date | date:"yyyy"}})
+    ALBUM: {{album.name}} - ({{album.release_date | date:"yyyy"}})
   </h1>
   <h3 id="artistTitle">
     <a id="artTit" href='#/artist/{{album.artists[0].id}}'>
-      Artist: {{album.artists[0].name}}
+      ARTIST: {{album.artists[0].name}}
     </a>
   </h3>
   <h3 id="artGenre" ng-show="artist.genres.length>0">
-    Genre:
+    GENRE:
     <span  ng-repeat="genre in artist.genres">
       {{genre +" " | capitalize}} 
     </span>
   </h3>
   <h3 id="popularityTitle">
-    Popularity: {{album.popularity}}
+    POPULARITY: {{album.popularity}}
   </h3>
   <section id="coveralb">
     <img id="imgAlbum" ng-src="{{album.images[0].url}}"/>
@@ -22,16 +22,16 @@
   </section>
   <table id="tracksTable">
     <th id="disc">
-      Disc
+      DISC
     </th>
     <th id="num">
       N° 
     </th>
     <th id="track">
-      Tracks 
+      TRACKS 
     </th>
     <th id="dur">
-      Duration 
+      DURATION 
     </th>
     <tbody>
       <tr ng-repeat= "track in tracks">
