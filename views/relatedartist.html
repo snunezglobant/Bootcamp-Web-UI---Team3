@@ -6,15 +6,11 @@
   </article>
   <div id ="recontaineral">
     <section id="contre">
-      <ul ng-repeat="reartist in reartists" id="reartist">
-        <li>
+      <ul  id="reartist">
+        <li ng-repeat="reartist in reartists">
           <a href="#/artist/{{reartist.id}}"> 
             <img ng-show="reartist.images.length>0" ng-src="{{reartist.images[0].url}}" alt="{{artist.name}}">
-          </a>
-          <a href="#/artist/{{reartist.id}}">
-            <img ng-show="reartist.images.length<=0" src="img/perfilartist.jpg">
-          </a>
-          <a href="#/artist/{{reartist.id}}">
+            <img ng-show="reartist.images.length<=0" src="img/perfilartist2.jpg">
             <h3 id="namereart">
               {{reartist.name}}
             </h3>
