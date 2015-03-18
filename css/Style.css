@@ -223,13 +223,15 @@ margin-top: 1rem;
 }
 input[type=search] {
 -webkit-appearance: textfield ;
--webkit-box-sizing: content-box ;
 font-family: inherit ;
 font-size: 100% ;
 }
+.navSearch>.searchHome[type=search] {
+-webkit-box-sizing: content-box;
+}
 input:focus{
 outline:0 ;
--webkit-appearance:normal ;
+-webkit-appearance:normal;
 }
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
