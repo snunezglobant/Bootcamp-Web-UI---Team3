@@ -400,8 +400,8 @@ a:hover{
 #artist img{
   display:block;
   margin-top: 8rem;
-  margin-left: 0;
   margin-bottom: 0;
+  margin-left: auto;
   margin-right: 0;
   width: 30%;
   height: auto;
@@ -416,6 +416,7 @@ a:hover{
   z-index:-1;
   margin-top: 5%;
   box-shadow: none;
+  margin-left: 0;
 }
 #artist #showalb:hover{
   opacity: 1;
@@ -865,6 +866,8 @@ a:hover{color: #DF0101}
     margin-right: 0;
     margin-left: 0;
     display: inline-block;
+    margin-top: 7%;
+
   }
   #artist{
     margin: auto;
